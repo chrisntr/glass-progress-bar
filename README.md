@@ -1,6 +1,9 @@
 Google Glass Progress Bar
 =========================
 
+ChrisNTR - This is a Xamarin.Android port of https://github.com/pif/glass-progress-bar so all credit for the work should go that way :), the rest of the readme is from Ostap's site.
+
+
 As of now, Google Glass GDK API has no Progress Bar view. 
 So I extracted this from GlassHome.apk (from https://github.com/zhuowei/Xenologer).
 
@@ -25,7 +28,7 @@ Usage
 3. Add progress bar view to your layout:
 
 ```xml
-    <com.google.glass.widget.SliderView
+    <GlassProgressBar.SliderView
         android:id="@+id/indeterm_slider"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -34,9 +37,9 @@ Usage
 
 4. Start it from activity:
 
-```java
-    mIndeterm.startIndeterminate();
-    mProgress.startProgress(10 * 1000); // progress which lasts 10 seconds
+```csharp
+    mIndeterm.StartIndeterminate();
+    mProgress.StartProgress(10 * 1000); // progress which lasts 10 seconds
 ```
 
 
